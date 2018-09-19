@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: none;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif, 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center; /* Important */
+}
+
+/* Dashboard and Controls */
+
+#dashboard {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.controls {
+    width: 438px; /* (numCols * 44) - 2 */
+    margin: 0 auto;
+    font-weight: bold;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;    
+}
+
+#difficulty {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#difficulty li {
+    background-color: #4E8098;
+    color: #fff;
+    cursor: pointer;
+    display : inline-block;
+
+    font-size: 14px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    text-align: center;
+    padding: 6px 8px;
+}
+
+#difficulty li:hover { background-color: #90C2E7; }
+#difficulty li.selected { background-color: #03312E; }
+
+#game-board {
+    min-width: 440px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.space {
+    background-color: #4E8098;
+    display: inline-block;
+
+    border: 2px solid none;
+    margin: 2px;
+    cursor: pointer;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 22px;
+    line-height: 38px;
+    z-index: 10;
+}
+.space:hover { background-color: #90C2E7; }
+.space .far, .space .fas , .space .fa{
+    color: white;
+    z-index: 0;
+}
+
+.safe {
+    background-color: #EEEBD3;
+    color: #777;
+}
+
+#new-game {
+    width: 420px;
+    background-color: #777;
+    color: #fff;
+    font-size: 38px;
+    padding: 15px 0;
+    cursor: pointer;
+    margin-top: 36px;
+}
+
+#new-game:hover { background-color: #333; }
+
+#feedback {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 4px;
+    right: 0;
+    position:absolute;
+}
+
+#title {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #333;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0; 
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#message {
+    font-size: 27px;
+    color: #777;
+    padding-top: 40px;
+}
